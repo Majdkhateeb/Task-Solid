@@ -26,15 +26,14 @@ class _SolidTaskState extends State<SolidTask> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: changeBackgroundColor,
-      child: Container(
-        color: backgroundColor,
-        child: const Center(
+      child: Scaffold(
+        backgroundColor: backgroundColor,
+        body: const Center(
           child: Text(
             'Hello there',
             style: TextStyle(
                 color: Colors.black,
                 fontSize: 32,
-                fontWeight: FontWeight.bold,
                 decoration: TextDecoration.none),
           ),
         ),
